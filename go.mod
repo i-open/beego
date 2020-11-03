@@ -1,4 +1,4 @@
-module github.com/astaxie/beego
+module github.com/i-open/beego
 
 require (
 	github.com/Knetic/govaluate v3.0.0+incompatible // indirect
@@ -32,6 +32,7 @@ require (
 	golang.org/x/crypto v0.0.0-20191011191535-87dc89f01550
 	golang.org/x/net v0.0.0-20190620200207-3b0461eec859 // indirect
 	gopkg.in/yaml.v2 v2.2.8
+	github.com/astaxie/beego v1.12.2
 )
 
 replace golang.org/x/crypto v0.0.0-20181127143415-eb0de9b17e85 => github.com/golang/crypto v0.0.0-20181127143415-eb0de9b17e85
@@ -39,3 +40,7 @@ replace golang.org/x/crypto v0.0.0-20181127143415-eb0de9b17e85 => github.com/gol
 replace gopkg.in/yaml.v2 v2.2.1 => github.com/go-yaml/yaml v0.0.0-20180328195020-5420a8b6744d
 
 go 1.13
+
+replace (
+	github.com/astaxie/beego => ./
+)
